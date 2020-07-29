@@ -1,22 +1,22 @@
-import pytest
-import selenium.webdriver
+from search import DuckDuckGoSearchPage
+from result import DuckDuckGoResultPage
 
+def test_basic_duckduckgo_search(browser):
+    search_page = DuckDuckGoSearchPage(browser)
+    result_page = DuckDuckGoResultPage(browser)
 
-def test_basic_duckduckgo_search():
+    #Given DDG home page is splayed
+    search_page.load()
+
+    search_page.search("panda")
 
     #Given the DuckDuckGo home page is displayed
-    #TODO
+    assert "panda" in result_page.title()
 
     #When the user searches ofr "Panda"
-    #TODO
+    assert "panda" == result_page.search_input_value()
 
     #Then the search result title contains "Panda"
-    #TODO
+    assert result_page.result_count_for_phrase("panda") > 0
 
-    #And the search result query is "Panda"
-    #TODO
-
-    #And the search result links pertain to "Panda"
-    #TODO
-
-    raise Exception("Incomplete Test")
+    assert True
