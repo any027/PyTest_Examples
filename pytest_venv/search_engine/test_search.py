@@ -1,5 +1,5 @@
-from search import DuckDuckGoSearchPage
-from result import DuckDuckGoResultPage
+from pages.search import DuckDuckGoSearchPage
+from pages.result import DuckDuckGoResultPage
 
 def test_basic_duckduckgo_search(browser):
     search_page = DuckDuckGoSearchPage(browser)
