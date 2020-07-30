@@ -26,3 +26,8 @@ Different OS's and different terminals run different things these are what i've 
 * Windows(cmd prompt): activate.bat
 * Windows(powershell): Activate.ps1
 
+Now that those optional steps are out of the way, let's install Pytest and Selenium! <br/>
+The command to install pytest is:
+<b> pip install selenium </b> </br>
+The command to install selenum is:
+<b> pip install pytest </b> </br>
