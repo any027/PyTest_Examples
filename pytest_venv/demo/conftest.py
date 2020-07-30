@@ -8,4 +8,4 @@ def my_fixture():
 
 @pytest.fixture
 def captured_print(capsys):
-    print("last hello")
+    print("hello")
