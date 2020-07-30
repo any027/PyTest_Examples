@@ -3,6 +3,16 @@ from selenium.webdriver.common.keys import Keys
 
 class DuckDuckGoSearchPage:
 
+    # Popular Locators
+    # By.ID
+    # By.NAME
+    # By.CLASS_NAME
+    # By.CSS_SELECTOR
+    # By.XPATH
+    # By.LINK_TEXT
+    # By.PARTIAL_LINK_TEXT
+    # By.TAG_NAME
+
     URL = "https://www.duckduckgo.com"
 
     SEARCH_INPUT = (By.NAME, 'q')
