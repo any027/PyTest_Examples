@@ -22,7 +22,7 @@ Then when that is done, do </br>
 <b>python -m venv (NAME OF YOUR VIRTUAL ENVIRONMENT)</b> </br>
 Then you go into the new virtual environment and you then activate it using a script meant for your configurations. </br>
 Different OS's and different terminals run different things these are what i've figured out so far: </br>
-Unix/Linux: activate
-Windows(cmd prompt): activate.bat
-Windows(powershell): Activate.ps1
+* Unix/Linux: activate
+* Windows(cmd prompt): activate.bat
+* Windows(powershell): Activate.ps1
 
