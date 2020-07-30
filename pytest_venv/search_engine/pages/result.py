@@ -27,5 +27,6 @@ class DuckDuckGoResultPage:
     search_input = self.browser.find_element(*self.SEARCH_INPUT)
     return search_input.get_attribute('value')
 
+
   def title(self):
     return self.browser.title
