@@ -3,7 +3,8 @@ from selenium import webdriver
 
 @pytest.fixture
 def browser():
-    #Need to put Chromedriver on system path?
+    #Need to put Chromedriver on system path, or you can use whatever driver you want here, 
+    # but we will be using Chrome webdriver for these tests
     browser = webdriver.Chrome()
     #This wait will help us for race conditions.
     browser.implicitly_wait(10)
