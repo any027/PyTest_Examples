@@ -5,7 +5,7 @@ def test_basic_duckduckgo_search(browser):
     search_page = DuckDuckGoSearchPage(browser)
     result_page = DuckDuckGoResultPage(browser)
 
-    #Given DDG home page is splayed
+    #Given DDG home page is displayed
     search_page.load()
 
     search_page.search("panda")
